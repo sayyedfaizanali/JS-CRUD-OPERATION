@@ -1,0 +1,80 @@
+body{
+    background-color: #ffff;
+}
+h1{
+    text-align: center;
+}
+.employee-form {
+    border-style: solid;
+    border-radius: 15px;
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+}
+@media screen and (min-width: 768px) {
+    .employee-form{
+        width: 50%;  
+    }
+  }
+.employees-table {
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+    
+}
+
+table {
+    border-collapse: collapse;
+}
+#employeeList{
+    width: 100%;
+}
+td,
+th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+}
+tr:nth-child(even),
+table.list thead > tr ,tbody > tr {
+    background-color: lightgoldenrodyellow;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 30%;
+    background-color: green;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-action-buttons {
+    text-align: right;
+}
+.btn_edit,.btn_delete{
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 2px 25px;
+}
+.btn_edit{
+    background-color: orange;
+}
+.btn_delete{
+    background-color: red;
+}

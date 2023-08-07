@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>CURD OPERATIONS</title>
+</head>
+
+<body>
+    <h1>
+       JavaScript CRUD Example Tutorial
+    </h1>
+   
+    <div class="employee-form">
+        <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+            <div>
+                <label>Employee Name</label>
+                <input type="text" name="empName" id="empName">
+            </div>
+            <div>
+                <label>Employee Age</label>
+                <input type="text" name="empAge" id="empAge">
+            </div>
+            <div>
+                <label>Employee Designation</label>
+                <input type="text" name="empDesignation" id="empDesignation">
+            </div>
+            <div class="form-action-buttons">
+                <input type="submit" value="Submit" id="action_btn">
+            </div>
+        </form>
+    </div>
+    <br />
+    <div class="employees-table">
+        <table id="employeeList">
+            <thead>
+                <tr>
+                    <th>Employee Name</th>
+                    <th>Employee Age</th>
+                    <th>Employee Designation</th>
+                    <th>Action Performed</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
